@@ -1,0 +1,133 @@
+/* CSS ESERCIZIO 2 */
+* {
+box-sizing: border-box;
+}
+
+html, 
+body {
+    height: 100%;
+}
+
+body {
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  background: url("../images/bg.png") no-repeat center center fixed;
+  
+}
+
+.text-left {
+  text-align: left;
+}
+
+.container_center {
+  width: 70%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#title_table {
+  align-self: flex-start;
+  margin-top: 150px;
+  font-size: 28px;
+  font-weight: 500;
+  color: #8A9DA6;
+  margin-bottom: 20px;
+}
+
+#table_fruit {
+  width:100%;
+  border-radius: 6px;
+  border-spacing: 0 20px;
+  border-collapse: separate;
+  text-align:center;
+}
+
+#intestation > th {
+ line-height: 70px;
+ font-weight: 500;
+ color:#8A9DA6 ;
+ background-color: #ced9de;
+}
+
+.item {
+  line-height: 100px;
+  color: #6a8592;
+}
+
+.img_fruit {
+  vertical-align: middle;
+ 
+}
+
+
+.item > td:first-child, #intestation > th:first-child {
+   width: 150px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+ 
+ 
+}
+
+.item > td:last-child,#intestation > th:last-child {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  
+  
+}
+
+
+.item > td {
+  margin-top: 20px;
+  background-color: white;
+  line-height: 100px;
+}
+
+.available, .not_available {
+  height: 35px;
+  width: 125px;
+  display: inline-block;
+  line-height: 35px;
+  margin: auto;
+  border-radius: 50px;
+  color: white;
+}
+
+.available {
+  background: rgb(122,247,168);
+  background: linear-gradient(90deg, rgba(122,247,168,1) 23%, rgba(54,212,111,1) 69%);
+}
+
+.not_available {
+  background: rgb(222,105,105);
+  background: linear-gradient(90deg, rgba(222,105,105,1) 23%, rgba(212,54,54,0.9976365546218487) 69%);  
+}
+
+button.delete {
+  background-color:transparent;
+  padding: 5px;
+  border: 0;
+}
+
+button.delete img {
+  vertical-align: middle;
+}
+
+button.delete:hover {
+  border: 2px solid red;
+  border-radius: 50%;
+}
+
+/*animation*/
+.item {
+  transition: transform 0.8s;
+}
+
+.item:hover {
+   transform: scale(1.05);
+  -webkit-box-shadow: 0px 0px 19px 15px rgba(0,0,0,0.1); 
+  box-shadow: 0px 0px 9px 5px rgba(0,0,0,0.1);
+}
+

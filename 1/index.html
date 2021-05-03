@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Exercises - 1 - HTML, CSS and basic JS interaction</title>
+    <link rel="shortcut icon" type="image/png" sizes="32x32"
+        href="https://www.nautes.com/images/favicon/favicon-32x32.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  
+  <div id="app" class="container_center">
+    <h1 id="title_table">My Fruit Shop</h1>
+    <table id="table_fruit">
+
+      <thead>
+
+        <tr id="intestation">
+
+          <th></th>
+          <th class="text-left" >Descrizione Prodotto</th>
+          <th>Qta</th>
+          <th>Prezzo</th>
+          <th>Stato</th>
+          <th>Azioni</th>
+          
+        </tr>  
+
+      </thead>
+
+      <tbody>
+
+        <tr class="item" v-for="(fruit,index) in fruits">
+
+          <td><img class="img_fruit" :src="fruit.img" :alt="fruit.description" ></td>
+          <td class="text-left" >{{fruit.description}}</td>
+          <td>{{fruit.qta + " pz"}}</td>
+          <td>{{fruit.price + " €"}}</td>
+          <td v-if="fruit.qta > 1"><span class="available" >Disponibile</span></td>
+          <td v-else ><span class="not_available" >Esaurito</span></td>
+          <td><button @click="deleteItem(index)" class="delete" ><img src="images/icons/delete.png" alt="delete"></button></td>
+
+        </tr>
+
+      </tbody>
+
+    </table>
+  </div>  
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
