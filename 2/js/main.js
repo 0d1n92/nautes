@@ -72,7 +72,7 @@ const app = new Vue({
         description: this.description,
         img: "images/icons/fruit-placeholder.png",
         qta: this.qty,
-        price: this.price,
+        price: parseInt(this.price).toFixed(2).replace('.', ',') ,
 
       };
 
