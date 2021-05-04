@@ -77,6 +77,9 @@ const app = new Vue({
       };
 
       this.fruits.push(newItem);
+      this.description=null;
+      this.qty=null;
+      this.price=null;
 
     }
 
