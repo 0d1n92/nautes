@@ -69,7 +69,7 @@ const app = new Vue({
 
         description: this.description,
         img: "images/icons/fruit-placeholder.png",
-        quantity: this.qty,
+        qta: this.qty,
         price: this.price,
 
       };
