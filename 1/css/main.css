@@ -23,18 +23,20 @@ body {
 .container_center {
   width: 70%;
   display: flex;
-  margin: auto;
   justify-content: center;
   flex-direction: column;
+  margin: auto;
+  
 }
 
 #title_table {
   align-self: flex-start;
   margin-top: 150px;
+  margin-bottom: 20px;
   font-size: 28px;
   font-weight: 500;
   color: #8A9DA6;
-  margin-bottom: 20px;
+  
 }
 
 #table_fruit {
@@ -46,10 +48,11 @@ body {
 }
 
 #intestation > th {
- line-height: 70px;
- font-weight: 500;
- color:#8A9DA6 ;
- background-color: #ced9de;
+ 
+  line-height: 70px;
+  font-weight: 500;
+  color:#8A9DA6 ;
+  background-color: #ced9de;
 }
 
 .item {
@@ -89,9 +92,9 @@ body {
   height: 35px;
   width: 125px;
   display: inline-block;
-  line-height: 35px;
   margin: auto;
   border-radius: 50px;
+  line-height: 35px;
   color: white;
 }
 
