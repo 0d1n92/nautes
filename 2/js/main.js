@@ -64,7 +64,7 @@ const app = new Vue({
     },
 
     addItem: function () {
-
+      console.log("prova");
       const newItem = {
 
         description: this.description,
