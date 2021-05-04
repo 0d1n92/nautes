@@ -3,7 +3,7 @@
 box-sizing: border-box;
 }
 
-html, 
+html,
 body {
     height: 100%;
 }
@@ -13,7 +13,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   background: url("../images/bg.png") no-repeat center center fixed;
-  
+
 }
 
 .text-left {
@@ -59,7 +59,7 @@ body {
 
 .img_fruit {
   vertical-align: middle;
- 
+
 }
 
 
@@ -67,15 +67,15 @@ body {
    width: 150px;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
- 
- 
+
+
 }
 
 .item > td:last-child,#intestation > th:last-child {
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
-  
-  
+
+
 }
 
 
@@ -102,7 +102,7 @@ body {
 
 .not_available {
   background: rgb(222,105,105);
-  background: linear-gradient(90deg, rgba(222,105,105,1) 23%, rgba(212,54,54,0.9976365546218487) 69%);  
+  background: linear-gradient(90deg, rgba(222,105,105,1) 23%, rgba(212,54,54,0.9976365546218487) 69%);
 }
 
 button.delete {
@@ -115,11 +115,6 @@ button.delete img {
   vertical-align: middle;
 }
 
-button.delete:hover {
-  border: 2px solid red;
-  border-radius: 50%;
-}
-
 /*animation*/
 .item {
   transition: transform 0.8s;
@@ -127,7 +122,6 @@ button.delete:hover {
 
 .item:hover {
    transform: scale(1.05);
-  -webkit-box-shadow: 0px 0px 19px 15px rgba(0,0,0,0.1); 
+  -webkit-box-shadow: 0px 0px 19px 15px rgba(0,0,0,0.1);
   box-shadow: 0px 0px 9px 5px rgba(0,0,0,0.1);
 }
-

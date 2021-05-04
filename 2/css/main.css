@@ -9,7 +9,7 @@ body {
 }
 
 body {
- font-size: 14px;
+  font-size: 14px;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   background: url("../images/bg.png") no-repeat center center fixed;
@@ -33,7 +33,22 @@ body {
 #header {
   position: relative;
   margin-top: 150px;
-  margin-bottom: 20px;
+}
+
+ #dashed_linea {
+  margin-top: 25px;
+  display: block;
+  border: 0;
+  width: 100%;
+  height: 20px;
+  overflow: hidden;
+  margin-block-end: 0;
+} 
+
+ #dashed_linea::after{
+content:"-------------------------------------------------------------------------------------------------------------------------------------------------------";
+ color:#ced9de;
+letter-spacing: 5px; 
 }
 
  #header_left > * {
@@ -48,6 +63,8 @@ body {
   float: right;
 }
 
+/* button */
+
 #container_btn_form {
   height: 100px;
   display: flex;
@@ -56,7 +73,6 @@ body {
 }
 
 #add_btn, #close_btn, #submit_btn {
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,13 +80,12 @@ body {
   padding: 0 10px;
   line-height: 40px;
   border-style: solid;
-  border-width: 3px;
+  border-width: 1px;
   border-radius: 20px;
   width: 130px;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
-
 
 }
 
@@ -94,7 +109,6 @@ body {
 }
 
 #add_btn {
- 
   border:0;
   background: rgb(247,235,122);
   color: white;
@@ -102,10 +116,42 @@ body {
   background: linear-gradient(90deg, rgba(247,235,122,1) 23%, rgba(233,170,0,1) 69%);
 }
 
-/* #close_btn > img, #add_btn > img {
-  margin-left: 10px;
-} */
+/* button-CLOSE */
 
+/* input form */
+
+
+#container_input img {
+  vertical-align: middle;
+}
+
+#container_input input {
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  background-color: #e5eaed;
+  height: 50px;
+  border-radius: 25px;
+  border: 0;
+  margin: 0 25px;
+  padding: 0 20px;
+}
+
+#currency-field, #quatity {
+  padding: 0 30px;
+}
+
+#currency-field {
+  width: 120px;
+}
+
+#container_input input::placeholder {
+  color: rgba(137, 156, 136, 0.5);
+}
+
+#container_input input:focus-visible {
+  outline: none;
+}
+ /* input-form close */
 
 #title_table {
   align-self: flex-start;
@@ -194,17 +240,24 @@ button.delete img {
   vertical-align: middle;
 }
 
-button.delete:hover {
-  border: 2px solid red;
-  border-radius: 50%;
+/*animation*/
+
+.slide-fade-enter-active {
+  transition: all .8s ease-in;
+}
+.slide-fade-leave-active {
+  transition: all .8s ease-out;
+}
+.slide-fade-enter, .slide-fade-leave-to
+ {
+  opacity: 0;
 }
 
-/*animation*/
-.item {
+#add_btn, #close_btn, #submit_btn,.item {
   transition: transform 0.8s;
 }
 
-.item:hover {
+ #add_btn:hover, #close_btn:hover, #submit_btn:hover,.item:hover {
    transform: scale(1.05);
   -webkit-box-shadow: 0px 0px 19px 15px rgba(0,0,0,0.1); 
   box-shadow: 0px 0px 9px 5px rgba(0,0,0,0.1);

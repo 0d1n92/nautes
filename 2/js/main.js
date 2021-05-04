@@ -2,6 +2,7 @@
 const app = new Vue({
   el: '#app',
   data: {
+    
     fruits: [
       {
         description:"Fragola deliziosa",
@@ -41,9 +42,9 @@ const app = new Vue({
 
     description:null,
 
-    qty: 0,
+    qty: null,
 
-    price: 0,
+    price: null,
 
   },
 
@@ -64,7 +65,7 @@ const app = new Vue({
 
     addItem: function () {
 
-      const newItem= {
+      const newItem = {
 
         description: this.description,
         img: "images/icons/fruit-placeholder.png",
