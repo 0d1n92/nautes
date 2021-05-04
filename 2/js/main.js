@@ -64,7 +64,9 @@ const app = new Vue({
     },
 
     addItem: function () {
-      console.log("prova");
+      console.log(this.qty);
+      
+      if (this.description != null && this.qty!= null && this.price!=null ) {
       const newItem = {
 
         description: this.description,
@@ -75,6 +77,8 @@ const app = new Vue({
       };
 
       this.fruits.push(newItem);
+
+    }
 
     } 
 
