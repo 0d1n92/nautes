@@ -13,6 +13,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   background: url("../images/bg.png") no-repeat center center fixed;
+  min-width: 1350px;
   
 }
 
